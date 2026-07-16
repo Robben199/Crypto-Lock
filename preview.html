@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Lock V1 - Preview</title>
+
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+<body>
+<canvas id="matrixCanvas"></canvas>
+
+<button id="backBtn">← Kembali</button>
+
+<h2 id="fileName"></h2>
+
+<div id="previewArea"></div>
+
+<div id="fileInfo"></div>
+
+<button id="deleteBtn">🗑 Hapus</button>
+<button id="exportBtn">📥 Export</button>
+
+<div id="deletePopup" class="popup">
+
+    <div class="popupBox">
+
+        <h3>🗑 Hapus File</h3>
+
+        <p id="deleteText"></p>
+
+        <button id="cancelDelete">Batal</button>
+        <button id="confirmDelete">Hapus</button>
+
+    </div>
+
+</div>
+
+<script src="../Script/preview.js"></script>
+
+</body>
+</html>

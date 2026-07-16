@@ -1,0 +1,179 @@
+body{
+    background:#101820;
+    color:#00ff66;
+    font-family:Consolas,monospace;
+    margin:0;
+    padding:20px;
+}
+
+.container{
+    max-width:500px;
+    margin:auto;
+    background:#1b1b1b;
+    border:2px solid #00ff66;
+    border-radius:10px;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+}
+
+p{
+    text-align:center;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+}
+
+select,
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    border:1px solid #00ff66;
+    border-radius:5px;
+    background:#000;
+    color:#00ff66;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#00ff66;
+    color:#000;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#00cc55;
+}
+
+hr{
+    border:1px solid #00ff66;
+}
+
+#splash{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+#splash img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    background:#000;
+}
+
+#unlockMenu{
+    display:none;
+    color:white;
+    text-align:center;
+    padding-top:50px;
+}
+
+/*======================================
+BACKGROUND MATRIX
+======================================*/
+
+#matrixCanvas{
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    z-index: -1;
+
+    background: black;
+
+}
+
+#addFile{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50%;
+
+    font-size: 32px;
+    cursor: pointer;
+}
+#file{
+    display: none;
+}
+
+body{
+    background: black;
+    color: white;
+    
+    
+    #previewArea img{
+
+    max-width:100%;
+    max-height:70vh;
+    object-fit:contain;
+    border-radius:10px;
+
+}
+
+#previewArea{
+    text-align:center;
+    margin:20px;
+}
+
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+
+    justify-content:center;
+    align-items:center;
+}
+
+.popupBox{
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:12px;
+    width:300px;
+    text-align:center;
+}
+
+.popupBox button{
+    margin:10px;
+    padding:10px 20px;
+}

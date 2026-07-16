@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Lock V1</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <audio id="clickSound" src="../assets/click.mp3" preload="auto"></audio>
+</head>
+<body>
+
+    <!-- Splash Screen -->
+    <div id="splash">
+        <img src="../assets/logo.png" alt="Crypto Lock Logo">
+    </div>
+
+    <!-- Isi aplikasi -->
+    <div id="unlockMenu">
+        <h1>Selamat Datang di Crypto Lock V1</h1>
+    </div>
+
+<canvas id="matrixCanvas"></canvas>
+
+<div class="container">
+
+    <h1>🔐 Crypto Lock V1</h1>
+    <p>Enkripsi atau Dekripsi CodeName menggunakan Vigenère Cipher.</p>
+
+    <hr>
+
+    <label>Mode</label>
+    <select id="mode"
+    onchange="resetForm()">
+        <option value="encrypt">Enkripsi</option>
+        <option value="decrypt">Dekripsi</option>
+    </select>
+
+    <br><br>
+
+    <label id="mainLabel">CodeName</label>
+    <input id="codename"
+        type="text"
+        id="codename"
+        placeholder="Contoh: HELLO"
+        oninput=" ">
+
+    <br><br>
+
+    <label>Kunci Khusus</label>
+    <input
+        type="text"
+        id="key"
+        placeholder="Contoh: KEY"
+        oninput=" ">
+
+    <br><br>
+
+    <button onclick="processCipher()">
+        Konfirmasi
+    </button>
+    
+    <br><br>
+
+    <button id="saveButton" onclick="saveEncryption()" style="display:none;">
+     Konfirmasi Simpan
+     </button>
+
+    <hr>
+
+    <h3>Hasil</h3>
+
+    <textarea
+        id="output"
+        rows="5"
+        readonly
+        placeholder="Hasil akan muncul di sini..."></textarea>
+        
+
+</div>
+
+<script src="../Script/script.js"></script>
+
+</body>
+</html>
