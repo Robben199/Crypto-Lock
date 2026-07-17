@@ -271,7 +271,7 @@ function processCipher(){
        "✔️ Kode benar!\n\n" +
        "ACCESS GRANTED";
        
-       window.location.href = "../HTML/file.html";
+       window.location.href = "file.html";
 
        }
        else{
