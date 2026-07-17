@@ -59,7 +59,7 @@ confirmDelete.onclick = () => {
 
         popup.style.display = "none";
 
-        window.location.href = "../HTML/file.html";
+        window.location.href = "file.html";
 
     };
     
@@ -114,7 +114,7 @@ openRequest.onerror = () => {
 };
 
 document.getElementById("backBtn").onclick = () => {
-    window.location.href = "../HTML/file.html";
+    window.location.href = "file.html";
 };
 
 //UKURAN DIPERSIMPEL
